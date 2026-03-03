@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --background-color: #ffffff; /* Light theme background */
+    --text-color: #000000; /* Light theme text color */
+}
+
+/* Dark Theme */
+[data-theme="light"] {
+    --background-color: White; /* Dark theme background */
+    --text-color: #cccccc; /* Dark theme text color */
+}
+
+

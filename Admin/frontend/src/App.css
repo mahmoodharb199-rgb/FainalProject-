@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin-top: -12px;
+  font-family: 'Inter', sans-serif;
+  background-color: #FBFBFB;
+
+  
+}
+
+header, nav {
+  z-index: 10001 !important;
+}
+
+
+
+.title {
+  @apply text-4xl md:text-5xl font-bold my-2;
+}
+
+.section-container {
+  @apply max-w-screen-xl mx-auto px-4 py-8;
+}
+
+.testimonial-slider {
+  width: 100%;
+}
+
+.slick-slide {
+  padding: 0 15px; /* Padding to ensure content doesn't touch edges */
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-dots li button:before {
+  color: #4caf50; /* Change the color of dots */
+  font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4caf50; /* Color of the active dot */
+}
+
+/* Optional: Adjust text sizes and spacing for different screen sizes */
+@media (max-width: 768px) {
+  .text-secondary {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+  .title {
+    font-size: 2xl; /* Adjust title font size for smaller screens */
+  }
+  .slick-slide {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-secondary {
+    font-size: 14px; /* Further adjust font size for mobile screens */
+  }
+  .title {
+    font-size: xl; /* Further adjust title font size for mobile screens */
+  }
+}
+.section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.testimonial-slider .slick-prev:before,
+.testimonial-slider .slick-next:before {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.testimonial-slider .slick-prev {
+  left: 10px;
+}
+
+.testimonial-slider .slick-next {
+  right: 10px;
+}
+
+.testimonial-slider .slick-dots li button:before {
+  color: #4caf50; 
+  font-size: 10px;
+}
+
+.testimonial-slider .slick-dots li.slick-active button:before {
+  color: #4caf50; /* White color for active dot */
+}
+
+.login {
+  background-image: url('../public/Login/login.jpg'); /* تأكد من تعديل المسار للصورة الصحيحة */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .story{
+  background-image: url('../public/OurStory/story.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+} */

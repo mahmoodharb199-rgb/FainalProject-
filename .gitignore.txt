@@ -1,0 +1,13 @@
+# تجاهل ملفات الفيديو الكبيرة
+Admin/frontend/public/Articles/*.mp4
+user/frontend/public/Articles/*.mp4
+
+# تجاهل مجلدات node_modules
+**/node_modules/
+
+# تجاهل ملفات البناء
+**/build/
+**/dist/
+
+# ملفات البيئة
+*.env
